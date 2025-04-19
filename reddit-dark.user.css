@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Reddit Dark
 @namespace      github.com/SaymonFake/Stylus
-@version        1.0.0
+@version        1.0.1
 @description    custom dark userstyle for old reddit
 @author         SaymonFake
 ==/UserStyle== */
@@ -9,32 +9,32 @@
 @-moz-document domain("reddit.com") {
 :root {
   /* Main Backgrounds */
-  --bg-primary: #272b30; /* Used for body, links, comments, etc. [cite: 1, 2, 3, 18, 19, 46, 60, 63, 64, 102] */
-  --bg-secondary: #363b42; /* Used for headers, tabs, user text areas, etc. [cite: 15, 16, 17, 34, 67, 68, 103, 116, 122] */
-  --bg-interface: #1f2125; /* Used for header area, more links, etc. [cite: 13, 42, 48, 53, 73, 98, 147] */
-  --bg-accent: #7d9f9b;   /* Used for buttons, etc. [cite: 20, 40, 76, 134] */
-  --bg-highlight: #22262a;  /* Used for organic listings, etc. [cite: 12, 66, 120, 128] */
+  --bg-primary: #272b30; /* Used for body, links, comments, etc. */
+  --bg-secondary: #363b42; /* Used for headers, tabs, user text areas, etc. */
+  --bg-interface: #1f2125; /* Used for header area, more links, etc. */
+  --bg-accent: #7d9f9b;   /* Used for buttons, etc. */
+  --bg-highlight: #22262a;  /* Used for organic listings, etc. */
 
   /* Text Colors */
-  --text-primary: #d4d7db; /* Default text color, used widely [cite: 5, 6, 8, 43, 44, 63, 75, 104, 135, 142, 165] */
-  --text-secondary: #70757b; /* Used for user text, metadata, etc. [cite: 14, 19, 45, 62, 69, 162] */
-  --text-link: #78A0D6;    /* User links [cite: 4, 163] */
-  --text-title: #C2C2C7; /* Link hover color [cite: 3] */
-  --text-accent: #8eafc6;   /* Used for titles, links in sidebars, etc. [cite: 12, 16, 41, 105, 137] */
-  --text-muted: #888c91;    /* Used in tabs, gadgets, etc. [cite: 17, 37, 60, 136, 158] */
+  --text-primary: #b8b9bb; /* Default text color, used widely */
+  --text-secondary: #70757b; /* Used for user text, metadata, etc. */
+  --text-link: #78A0D6;    /* User links */
+  --text-title: #C2C2C7; /* Link hover color */
+  --text-accent: #8eafc6;   /* Used for titles, links in sidebars, etc. */
+  --text-muted: #888c91;    /* Used in tabs, gadgets, etc. */
 
   /* Borders */
-  --border-primary: #45494d; /* Used for various borders [cite: 22, 33, 68, 77, 108, 113, 116] */
-  --border-secondary: #363b42; /* Used for tab menus, comments, etc. [cite: 15, 68, 122] */
-  --border-accent: #323B41;  /* Used for organic listings [cite: 11] */
+  --border-primary: #45494d; /* Used for various borders */
+  --border-secondary: #363b42; /* Used for tab menus, comments, etc. */
+  --border-accent: #323B41;  /* Used for organic listings */
 
   /* Special Colors */
-  --color-orange-score: rgb(255, 139, 96); /* Orange score color [cite: 7] */
-  --bg-selection: #333e47;    /* Selection background [cite: 9, 10] */
-  --color-selection: #4e6c80; /* Selection text color [cite: 9, 10, 66] */
-  --color-green: #618463;       /* Used for trending subreddits, etc. [cite: 13, 70, 75, 132] */
-  --color-red: #B17272;         /* Used for NSFW labels, errors, etc. [cite: 47, 110, 146] */
-  --color-gold: #FDE379;        /* Gold advertisement [cite: 45, 49] */
+  --color-orange-score: rgb(255, 139, 96); /* Orange score color */
+  --bg-selection: #333e47;    /* Selection background */
+  --color-selection: #4e6c80; /* Selection text color */
+  --color-green: #618463;       /* Used for trending subreddits, etc. */
+  --color-red: #B17272;         /* Used for NSFW labels, errors, etc. */
+  --color-gold: #FDE379;        /* Used for submitter, flair, etc. */
 }
 
 /* ==========================================================================
@@ -524,22 +524,6 @@ input[type="submit"] {
 }
 
 /* ==========================================================================
-   Markdown Styling
-   ========================================================================== */
-
-.md {
-  color: #B8B9BB
-}
-
-.md a {
-  color: var(--text-accent)
-}
-
-.md a:visited {
-  color: #5f5365 !important
-}
-
-/* ==========================================================================
    "More" Links and Gold Features
    ========================================================================== */
 
@@ -850,6 +834,17 @@ body.with-listing-chooser .listing-chooser {
     color: var(--color-red)
 }
 
+.md {
+  color: var(--text-primary)
+}
+
+.md a {
+  color: var(--text-accent)
+}
+
+.md a:visited {
+  color: #5f5365
+}  
 /* ==========================================================================
    Tagline Specifics
    ========================================================================== */
