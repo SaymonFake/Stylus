@@ -477,14 +477,20 @@ abmenu li.selected a {
    ========================================================================== */
 
 #search input[type="text"] {
-  background: var(--bg-primary);
-  color: var(--text-muted);
-  border: none
+  background: var(--bg-interface);
+  color: var(--text-muted) !important;
+  border: none;
+  
 }
 
 #search input[type="text"]:focus {
   background: var(--bg-primary);
-  color: var(--text-primary)
+  color: var(--text-primary) !important;
+}
+  
+.search-expando.collapsed:before {
+  background: none;
+  border-bottom: solid var(--text-muted)
 }
 
 .login-form-side input[type="text"],
